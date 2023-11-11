@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.LoginSignup.SignUpSec"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/btnSignUpBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnback"
+            android:padding="5dp"
+            android:onClick="signupBackSec"
+           />
+        <ImageView
+            android:id="@+id/signUpPageImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/loginsvg"
+             />
+        <TextView
+            android:id="@+id/textGetStartedSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signupgreet"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinsemibold"
+          />
+        <TextView
+            android:id="@+id/createAccSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signupgreetdesc"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsemibold"
+            android:textColor="@color/text"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppinsemibold"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trans" />
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectage"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppinsemibold"
+                />
+
+            <DatePicker
+                android:id="@+id/dpBdate"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNextSignUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="@string/next"
+            android:onClick="signUpSecNext"
+            android:backgroundTint="@color/text"
+            android:textColor="@color/white"
+           >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnLoginSignUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:backgroundTint="@color/text"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="@string/login"
+            android:onClick="signupSecLogin"
+            android:textColor="@color/black"
+       >
+
+        </Button>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.Onboarding"
+    android:orientation="vertical"
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationblock"
+        android:layout_width="410dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:paddingBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/firstpagesplashanimation"
+        tools:layout_editor_absoluteY="151dp"></com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:id="@+id/txtappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsemibold"
+        android:text="@string/appname"
+        android:textColor="@color/text"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtdesc"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsemibold"
+        android:text="Your Journey, elevated"
+        android:textSize="11dp"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/animationnextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationnext"
+            android:layout_width="181dp"
+            android:layout_height="233dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="-30dp"
+            android:paddingBottom="30dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/nextpageanimation"
+            app:lottie_repeatCount="50"></com.airbnb.lottie.LottieAnimationView>
+    </FrameLayout>
+
+</LinearLayout>

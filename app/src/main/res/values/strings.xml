@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">trackmybusMain</string>
+    <string name="splashfirstword">Your Journey,elevated</string>
+    <string name="splashimgdesc">Track my bus logo</string>
+    <string name="appname">Track My Bus</string>
+    <string name="splashgetstarted">Get Started</string>
+    <string name="onboardDescFirst">Secure your seat and leave the hustle behind book your bus ticket in advance</string>
+    <string name="onboardDescSecond">Track your bus in real-time and bid farewell to the tension of missing the ride</string>
+    <string name="onboardDescThird">Welcome to Track My Bus App Say goodbye to long queue and embrace convenience of booking your bus ticket</string>
+    <string name="onboardHeadingFirst">Select Your Destination</string>
+    <string name="onboardHeadingSecond">Track Your Bus</string>
+    <string name="onboardHeadingThird">Enjoy Your Journey</string>
+    <string name="btnskip">Skip >></string>
+    <string name="login">Login</string>
+    <string name="Signup">Sign-Up</string>
+    <string name="logingreet">Welcome Back !</string>
+    <string name="logingreetdesc">Login to your existing account</string>
+    <string name="signupgreet">Let’s Get Started</string>
+    <string name="signupgreetdesc">create an account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="forgetPass">Forget Password</string>
+    <string name="createacc">Create account</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phonenum">Phone Number</string>
+    <string name="next">Next</string>
+    <string name="gender">Choose Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="trans">Other</string>
+    <string name="selectage">Select Your Birth-Date</string>
+    <string name="whoops">Whoops!</string>
+    <string name="retry">Retry</string>
+    <string name="nointernetconnection">No internet connection found \n check your connection</string>
+
+</resources>
