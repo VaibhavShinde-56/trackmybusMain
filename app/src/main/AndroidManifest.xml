@@ -16,7 +16,13 @@
         android:theme="@style/Theme.TrackmybusMain"
         tools:targetApi="31">
         <activity
-            android:name=".Common.CheckInternet"
+            android:name=".Common.HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Common.TicketBooking.ShowTicket"
+            android:exported="false" />
+        <activity
+            android:name=".Common.TicketBooking.MyBookings"
             android:exported="false" />
         <activity
             android:name=".Common.LoginSignup.SignUpThird"

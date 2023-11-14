@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:outlineAmbientShadowColor="@color/gray"
+            app:cardCornerRadius="7dp"
+            android:clickable="true"
+            android:backgroundTint="@color/gray"
+            android:id="@+id/ticketContainer"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/busNoAndPassengerContainer">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/busNo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="3dp"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:id="@+id/busNoMybookings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:layout_weight="1"
+                        android:text="1930BNGVM"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passenger"
+                        android:fontFamily="@font/poppinsregular"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="0.5"
+                        />
+
+                    <TextView
+                        android:id="@+id/passangersMybooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="4"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ticketid"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="3dp"
+                        android:layout_weight="0.5"
+                        />
+                    <TextView
+                        android:id="@+id/ticketId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ticketId"
+                        android:paddingTop="5dp"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lineMybooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+
+                    android:background="@color/text"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/iconlocationFrommybookings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/iconlocation"/>
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/fromcitynameMybookings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/black"
+                                android:text="fromcity"
+                                android:fontFamily="@font/poppinsregular"
+                                android:layout_toRightOf="@+id/iconlocationFrommybookings"
+
+                                />
+                        </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/fromcitytimeMybooking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="time"
+                                android:layout_marginStart="30dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppinsregular"
+                                />
+                            <TextView
+                                android:id="@+id/fromcitydateMybooking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/black"
+                                android:text="dd/mm/yy"
+                                android:layout_marginStart="15dp"
+                                />
+
+                    </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:id="@+id/iconbusMybooking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bus"
+                                android:layout_gravity="center"
+                                />
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/iconlocationTomybookings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/iconlocation"/>
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/TocitynameMybookings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="toCity"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppinsregular"
+                                android:layout_toRightOf="@+id/iconlocationTomybookings"
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/TocitytimeMybooking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="time"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            />
+                        <TextView
+                            android:id="@+id/TocitydateMybooking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textColor="@color/black"
+                            android:text="dd/mm/yy"
+                            android:layout_marginStart="15dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</ScrollView>

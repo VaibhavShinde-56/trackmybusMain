@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.TicketBooking.ShowTicket"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/backBtnTicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btnback"/>
+                    <ImageView
+                        android:id="@+id/closeBtnTicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/close"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ticket"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsemibold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/gray"
+        android:backgroundTint="@color/ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        android:outlineAmbientShadowColor="@color/gray"
+        app:cardUseCompatPadding="true"
+        >
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ticketid"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ticketId"
+                        android:id="@+id/ticketIdTicketDetails"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/busNo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/busNoTicketDetails"
+                        android:text="@string/ticketId"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="kolhapur"
+                        android:id="@+id/fromCityTicketDetails"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/toCityTicketDetails"
+                        android:text="miraj"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/onboarding"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/boardingTimeTicketDetails"
+                        android:text="2:00 PM"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boardintdate"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/boardingDateTicketDetails"
+                        android:text="2:00 PM"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnCancleTicket"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/cancleTicket">
+
+        </Button>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

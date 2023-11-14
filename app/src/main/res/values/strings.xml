@@ -34,5 +34,17 @@
     <string name="whoops">Whoops!</string>
     <string name="retry">Retry</string>
     <string name="nointernetconnection">No internet connection found \n check your connection</string>
+    <string name="mybookings">My Bookings</string>
+    <string name="ticketId">ABCD9334</string>
+    <string name="busNo">Bus No :</string>
+    <string name="passenger">Passengers</string>
+    <string name="ticketid">Ticket ID :</string>
+    <string name="Ticket">Ticket Details</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="onboarding">Boarding Time</string>
+    <string name="boardintdate">Boarding Date</string>
+    <string name="cancleTicket">Cancle Ticket</string>
+    <string name="viewTickets">View Ticket</string>
 
 </resources>
