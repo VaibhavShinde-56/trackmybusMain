@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.example.trackmybusmain.Common.HomePage;
 import com.example.trackmybusmain.Common.utility.NetworkChangeListner;
 import com.example.trackmybusmain.R;
 
@@ -36,6 +37,11 @@ public class Login extends AppCompatActivity {
 
     public void createAccountSignUp(View view) {
         Intent intent = new Intent(Login.this,SignUp.class);
+        startActivity(intent);
+    }
+
+    public void loginLoginPage(View view) {
+        Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
 }

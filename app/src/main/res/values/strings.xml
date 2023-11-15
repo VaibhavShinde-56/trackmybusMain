@@ -46,5 +46,14 @@
     <string name="boardintdate">Boarding Date</string>
     <string name="cancleTicket">Cancle Ticket</string>
     <string name="viewTickets">View Ticket</string>
+    <string name="trackmybus">Track My Bus</string>
+    <string name="hello">Hello,</string>
+
+    <string name="busbooking">Bus Booking</string>
+    <string name="trackyourbus">Track Bus</string>
+    <string name="cancleticket">Cancel Ticket</string>
+    <string name="mybooking">Bookings History</string>
+    <string name="helpline">Helpline</string>
+    <string name="yourprofile">Your Profile</string>
 
 </resources>

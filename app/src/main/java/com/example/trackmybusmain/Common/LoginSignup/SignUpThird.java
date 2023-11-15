@@ -8,6 +8,7 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.trackmybusmain.Common.HomePage;
 import com.example.trackmybusmain.Common.TicketBooking.MyBookings;
 import com.example.trackmybusmain.Common.utility.NetworkChangeListner;
 import com.example.trackmybusmain.R;
@@ -43,7 +44,7 @@ public class SignUpThird extends AppCompatActivity {
     }
 
     public void SignupNextThird(View view) {
-        Intent intent = new Intent(SignUpThird.this, MyBookings.class);
+        Intent intent = new Intent(SignUpThird.this, HomePage.class);
         startActivity(intent);
     }
 }

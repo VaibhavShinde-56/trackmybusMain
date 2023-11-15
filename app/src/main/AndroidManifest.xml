@@ -16,6 +16,18 @@
         android:theme="@style/Theme.TrackmybusMain"
         tools:targetApi="31">
         <activity
+            android:name=".Common.ProfileUser"
+            android:exported="false" />
+        <activity
+            android:name=".Common.Helpline"
+            android:exported="false" />
+        <activity
+            android:name=".Common.BusTracking.TrackOnMap"
+            android:exported="false" />
+        <activity
+            android:name=".Common.TrackMybusLocation"
+            android:exported="false" />
+        <activity
             android:name=".Common.HomePage"
             android:exported="false" />
         <activity

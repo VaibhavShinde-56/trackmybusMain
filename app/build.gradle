@@ -38,9 +38,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation "com.airbnb.android:lottie:6.1.0"
     implementation 'com.google.android.material:material:1.10.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'com.hbb20:ccp:2.6.0'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.hbb20:ccp:2.7.3'
     implementation 'io.github.chaosleung:pinview:1.4.4'
     //noinspection GradleCompatible
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
