@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.trackmybusmain.Common.BusTracking.TrackOnMap;
+import com.example.trackmybusmain.Common.BusTracking.TrackingBusRealTime;
 import com.example.trackmybusmain.R;
 
 public class TrackMybusLocation extends AppCompatActivity {
@@ -18,7 +18,7 @@ public class TrackMybusLocation extends AppCompatActivity {
     }
 
     public void trackOnMap(){
-        Intent intent = new Intent(this, TrackOnMap.class);
+        Intent intent = new Intent(this, TrackingBusRealTime.class);
         startActivity(intent);
     }
 

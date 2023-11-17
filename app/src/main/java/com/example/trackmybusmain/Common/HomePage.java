@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.trackmybusmain.Common.BusTracking.TrackOnMap;
+import com.example.trackmybusmain.Common.BusTracking.TrackingBusRealTime;
 import com.example.trackmybusmain.Common.TicketBooking.MyBookings;
 import com.example.trackmybusmain.R;
 
@@ -32,7 +32,7 @@ public class HomePage extends AppCompatActivity {
 
 
         trackBusBtn.setOnClickListener(new View.OnClickListener() {
-            Intent intent = new Intent(getApplicationContext(), TrackOnMap.class);
+            Intent intent = new Intent(getApplicationContext(), TrackingBusRealTime.class);
             @Override
             public void onClick(View v) {
                 startActivity(intent);
