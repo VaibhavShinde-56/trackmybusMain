@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.trackmybusmain.Common.BusTracking.TrackingBusRealTime;
+import com.example.trackmybusmain.Common.TicketBooking.MainActivity;
+import com.example.trackmybusmain.Common.TicketBooking.MainActivity2;
 import com.example.trackmybusmain.Common.TicketBooking.MyBookings;
 import com.example.trackmybusmain.R;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class HomePage extends AppCompatActivity {
 
@@ -21,6 +24,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        TextInputEditText editTextBusNo = findViewById(R.id.busnoedittexthomepage); // Replace with your MaterialEditText ID
         trackBusBtn = findViewById(R.id.trackmyBusbtnHomePage);
 
         busBookingCard = findViewById(R.id.bookbuscardHomepage);
@@ -32,23 +36,22 @@ public class HomePage extends AppCompatActivity {
 
 
         trackBusBtn.setOnClickListener(new View.OnClickListener() {
-            Intent intent = new Intent(getApplicationContext(), TrackingBusRealTime.class);
+
             @Override
             public void onClick(View v) {
+                String enteredBusNo = editTextBusNo.getText().toString().trim();
+                Intent intent = new Intent(getApplicationContext(), TrackingBusRealTime.class);
+                intent.putExtra("Bus_number", enteredBusNo);
                 startActivity(intent);
             }
         });
     }
 
     public void bookBus(View view) {
-        Intent intent = new Intent(this, MyBookings.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
-    public void trackBus(View view) {
-        Intent intent = new Intent(this,TrackMybusLocation.class);
-        startActivity(intent);
-    }
 
     public void cancelTicket(View view) {
         Intent intent = new Intent(this, MyBookings.class);
@@ -67,6 +70,11 @@ public class HomePage extends AppCompatActivity {
 
     public void userProfile(View view) {
         Intent intent = new Intent(this, ProfileUser.class);
+        startActivity(intent);
+    }
+
+    public void trackBuslocation(View view) {
+        Intent intent = new Intent(getApplicationContext(), TrackMybusLocation.class);
         startActivity(intent);
     }
 }

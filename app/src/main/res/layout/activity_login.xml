@@ -52,7 +52,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edtxtUsername"
                 android:layout_width="match_parent"
-                android:layout_height="53dp"
+                android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="@string/username"
                 app:hintTextColor="@color/black"
@@ -78,7 +78,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edtxtPass"
                 android:layout_width="match_parent"
-                android:layout_height="53dp"
+                android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="@string/password"
                 app:hintTextColor="@color/black"

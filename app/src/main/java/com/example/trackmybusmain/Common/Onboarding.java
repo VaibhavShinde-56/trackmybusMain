@@ -81,10 +81,6 @@ public class Onboarding extends AppCompatActivity {
     }
 
     public void getStarted(View view){
-        SharedPreferences onboarding = getSharedPreferences("firstTime",MODE_PRIVATE);
-        SharedPreferences.Editor editor = onboarding.edit();
-        editor.putBoolean("firstTime",false);
-        editor.commit();
         startActivity(new Intent(Onboarding.this,StartScreen.class));
         finish();
     }

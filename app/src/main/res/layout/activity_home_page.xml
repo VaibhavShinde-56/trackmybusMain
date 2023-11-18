@@ -85,6 +85,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/busnoedittexthomepage"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -151,7 +152,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:onClick="trackBus"
+                android:onClick="trackBuslocation"
                 android:clickable="true"
                 android:id="@+id/trackbuscardHomepage"
                 android:layout_height="wrap_content"

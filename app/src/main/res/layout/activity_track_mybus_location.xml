@@ -69,6 +69,7 @@
                 android:textColorHint="@color/black"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
+                android:id="@+id/busnoBoxtrackmybus"
                 app:boxStrokeWidthFocused="2dp"
                 app:boxStrokeColor="@color/black"
                 >
@@ -76,6 +77,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/busNotrackMybus"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 

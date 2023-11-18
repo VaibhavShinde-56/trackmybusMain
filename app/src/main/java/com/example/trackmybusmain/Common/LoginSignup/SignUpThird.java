@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
@@ -44,6 +45,10 @@ public class SignUpThird extends AppCompatActivity {
     }
 
     public void SignupNextThird(View view) {
+        SharedPreferences onboarding = getSharedPreferences("firstTime",MODE_PRIVATE);
+        SharedPreferences.Editor editor = onboarding.edit();
+        editor.putBoolean("firstTime",false);
+        editor.commit();
         Intent intent = new Intent(SignUpThird.this, HomePage.class);
         startActivity(intent);
     }

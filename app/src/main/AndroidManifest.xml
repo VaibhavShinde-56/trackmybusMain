@@ -45,6 +45,15 @@
             android:name=".Common.Helpline"
             android:exported="false" />
         <activity
+            android:name=".Common.TicketBooking.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Common.TicketBooking.MainActivity2"
+            android:exported="false"/>
+        <activity
+            android:name=".Common.TicketBooking.MainActivity3"
+            android:exported="false"/>
+        <activity
             android:name=".Common.TrackMybusLocation"
             android:exported="false" />
         <activity

@@ -56,6 +56,8 @@
     <string name="helpline">Helpline</string>
     <string name="yourprofile">Your Profile</string>
     <string name="title_activity_tracking_bus_real_time">TrackingBusRealTime</string>
-    <string name="trackmybusApiKey">AIzaSyA47SwNUCTJgs3e0LFUYnU0MBALq3Bdx4c</string>
+    <string name="trackmybusApiKey">AIzaSyBUjabY0QN5x7_Ae6q2irHzVZ0XzLWoZ0w</string>
+    <string name="submit">Submit</string>
+    <string name="search_for_bus_tickets">Search for bus tickets</string>
 
 </resources>

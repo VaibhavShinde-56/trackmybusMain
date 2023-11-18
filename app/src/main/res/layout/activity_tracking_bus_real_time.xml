@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Common.BusTracking.TrackingBusRealTime" />
+    android:layout_width="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_marginStart="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trackmybus"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsemibold"
+            android:id="@+id/trackmybusmap"
+            />
+    </LinearLayout>
+
+    <fragment
+        android:layout_marginTop="70dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        tools:context=".Common.BusTracking.TrackingBusRealTime" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

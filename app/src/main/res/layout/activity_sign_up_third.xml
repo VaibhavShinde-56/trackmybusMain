@@ -97,7 +97,7 @@
                 android:backgroundTint="@color/text"
                 android:fontFamily="@font/poppinsemibold"
                 android:onClick="SignupNextThird"
-                android:text="@string/next"
+                android:text="@string/submit"
                 android:textColor="@color/white"
                 >
 

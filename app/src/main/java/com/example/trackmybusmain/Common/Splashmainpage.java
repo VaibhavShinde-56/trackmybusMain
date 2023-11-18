@@ -18,12 +18,17 @@ import android.widget.TextView;
 import com.example.trackmybusmain.Common.LoginSignup.StartScreen;
 import com.example.trackmybusmain.Common.utility.NetworkChangeListner;
 import com.example.trackmybusmain.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Splashmainpage extends AppCompatActivity {
     NetworkChangeListner networkChangeListner = new NetworkChangeListner();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        DatabaseReference rootRef= FirebaseDatabase.getInstance().getReference();
+        
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashmainpage);
@@ -71,7 +76,7 @@ public class Splashmainpage extends AppCompatActivity {
                         startActivity(nextishome);
                         finish();
                     }else{
-                        startActivity(new Intent(Splashmainpage.this, StartScreen.class));
+                        startActivity(new Intent(Splashmainpage.this, HomePage.class));
                         finish();
                     }
             }
@@ -93,9 +98,6 @@ public class Splashmainpage extends AppCompatActivity {
                     
             }
         });
-
-
-
     }
 
     @Override

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625745572429",
+    "project_id": "trackmybusmain",
+    "storage_bucket": "trackmybusmain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625745572429:android:fa367e6e793d2f44df6204",
+        "android_client_info": {
+          "package_name": "com.example.trackmybusmain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgIjH8hmPpsPxRKAmH-UUHFAl3WK3XSR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
